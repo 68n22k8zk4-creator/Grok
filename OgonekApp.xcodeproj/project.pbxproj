@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA01 /* OgonekAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB01 /* OgonekAppApp.swift */; };
+		AA02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB02 /* ContentView.swift */; };
+		AA03 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB03 /* Theme.swift */; };
+		AA04 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB04 /* Models.swift */; };
+		AA05 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB05 /* DataManager.swift */; };
+		AA06 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06 /* WeatherService.swift */; };
+		AA07 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07 /* WeatherView.swift */; };
+		AA08 /* ShiftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB08 /* ShiftsView.swift */; };
+		AA09 /* PetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB09 /* PetView.swift */; };
+		AA10 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10 /* ExpensesView.swift */; };
+		AA11 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11 /* GamesView.swift */; };
+		AA12 /* PetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12 /* PetDetailView.swift */; };
+		AA13 /* ShiftDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB13 /* ShiftDetailView.swift */; };
+		AA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB14 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB01 /* OgonekAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OgonekAppApp.swift; sourceTree = "<group>"; };
+		BB02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB03 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		BB04 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		BB05 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BB06 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		BB07 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		BB08 /* ShiftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftsView.swift; sourceTree = "<group>"; };
+		BB09 /* PetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetView.swift; sourceTree = "<group>"; };
+		BB10 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
+		BB11 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		BB12 /* PetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailView.swift; sourceTree = "<group>"; };
+		BB13 /* ShiftDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftDetailView.swift; sourceTree = "<group>"; };
+		BB14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB99 /* OgonekApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OgonekApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD00 = {
+			isa = PBXGroup;
+			children = (
+				DD01 /* OgonekApp */,
+				DD99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD01 /* OgonekApp */ = {
+			isa = PBXGroup;
+			children = (
+				BB01 /* OgonekAppApp.swift */,
+				BB02 /* ContentView.swift */,
+				BB03 /* Theme.swift */,
+				BB04 /* Models.swift */,
+				BB05 /* DataManager.swift */,
+				BB06 /* WeatherService.swift */,
+				DD02 /* Views */,
+				BB14 /* Assets.xcassets */,
+				BB15 /* Info.plist */,
+			);
+			path = OgonekApp;
+			sourceTree = "<group>";
+		};
+		DD02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB07 /* WeatherView.swift */,
+				BB08 /* ShiftsView.swift */,
+				BB09 /* PetView.swift */,
+				BB10 /* ExpensesView.swift */,
+				BB11 /* GamesView.swift */,
+				BB12 /* PetDetailView.swift */,
+				BB13 /* ShiftDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB99 /* OgonekApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE01 /* OgonekApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF03 /* Build configuration list for PBXNativeTarget "OgonekApp" */;
+			buildPhases = (
+				EE02 /* Sources */,
+				CC01 /* Frameworks */,
+				EE03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OgonekApp;
+			productName = OgonekApp;
+			productReference = BB99 /* OgonekApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EE01 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = FF01 /* Build configuration list for PBXProject "OgonekApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = DD00;
+			productRefGroup = DD99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE01 /* OgonekApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA14 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA01 /* OgonekAppApp.swift in Sources */,
+				AA02 /* ContentView.swift in Sources */,
+				AA03 /* Theme.swift in Sources */,
+				AA04 /* Models.swift in Sources */,
+				AA05 /* DataManager.swift in Sources */,
+				AA06 /* WeatherService.swift in Sources */,
+				AA07 /* WeatherView.swift in Sources */,
+				AA08 /* ShiftsView.swift in Sources */,
+				AA09 /* PetView.swift in Sources */,
+				AA10 /* ExpensesView.swift in Sources */,
+				AA11 /* GamesView.swift in Sources */,
+				AA12 /* PetDetailView.swift in Sources */,
+				AA13 /* ShiftDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		GG01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		GG02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		GG03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OgonekApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Огонёк";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogonek.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		GG04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OgonekApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Огонёк";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogonek.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF01 /* Build configuration list for PBXProject "OgonekApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				GG01 /* Debug */,
+				GG02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF03 /* Build configuration list for PBXNativeTarget "OgonekApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				GG03 /* Debug */,
+				GG04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF00 /* Project object */;
+}

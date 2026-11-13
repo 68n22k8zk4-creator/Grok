@@ -1,0 +1,65 @@
+workflows:
+  # Для GBox — без подписи, подпишешь своим сертификатом
+  ios-unsigned:
+    name: Ogonek Unsigned (GBox)
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      vars:
+        XCODE_PROJECT: "OgonekApp.xcodeproj"
+        XCODE_SCHEME: "OgonekApp"
+      xcode: latest
+    scripts:
+      - name: Build archive (no signing)
+        script: |
+          set -e
+          xcodebuild clean archive \
+            -project "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
+            -archivePath build/OgonekApp.xcarchive \
+            -destination "generic/platform=iOS" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_ENTITLEMENTS="" \
+            PROVISIONING_PROFILE_SPECIFIER=""
+      - name: Pack IPA
+        script: |
+          set -e
+          mkdir -p Payload
+          cp -R build/OgonekApp.xcarchive/Products/Applications/OgonekApp.app Payload/
+          zip -r OgonekApp.ipa Payload
+          mkdir -p build/ipa
+          mv OgonekApp.ipa build/ipa/
+          rm -rf Payload
+          ls -la build/ipa/
+    artifacts:
+      - build/ipa/*.ipa
+      - build/OgonekApp.xcarchive/**/*
+
+  # С подписью в CodeMagic (нужен .p12 + mobileprovision)
+  ios-ipa:
+    name: Ogonek IPA (signed)
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      vars:
+        XCODE_PROJECT: "OgonekApp.xcodeproj"
+        XCODE_SCHEME: "OgonekApp"
+        BUNDLE_ID: "com.ogonek.app"
+      xcode: latest
+      ios_signing:
+        distribution_type: ad_hoc
+        bundle_identifier: com.ogonek.app
+    scripts:
+      - name: Set up code signing
+        script: |
+          xcode-project use-profiles
+      - name: Build IPA
+        script: |
+          xcode-project build-ipa \
+            --project "$XCODE_PROJECT" \
+            --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
